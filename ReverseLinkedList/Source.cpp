@@ -1,5 +1,5 @@
-/*
-ÄæÖÃ´øÍ·½áµãµÄµ¥Á´±í
+ï»¿/*
+é€†ç½®å¸¦å¤´ç»“ç‚¹çš„å•é“¾è¡¨
 */
 #include <stdio.h>
 #include <stdlib.h>
@@ -27,7 +27,7 @@ void print(SLNode* head)
 
 SLNode* reverse(SLNode* head)
 {
-    SLNode *curr = head->Next; // µÚÒ»¸öÊı¾İ½Úµã
+    SLNode *curr = head->Next; // ç¬¬ä¸€ä¸ªæ•°æ®èŠ‚ç‚¹
     if (!curr || !curr->Next)
         return head;
 
@@ -39,7 +39,7 @@ SLNode* reverse(SLNode* head)
         tmp->Next = pre;
         pre = tmp;
     }
-    head->Next = pre; // ½«Í·½áµãÖ¸ÏòÄæÖÃºóµÄµÚÒ»¸ö½Úµã
+    head->Next = pre; // å°†å¤´ç»“ç‚¹æŒ‡å‘é€†ç½®åçš„ç¬¬ä¸€ä¸ªèŠ‚ç‚¹
 
     return head;
 }
@@ -57,7 +57,7 @@ SLNode* reverse_recursively_internal(SLNode* pre, SLNode* curr)
 
 SLNode* reverse_recursively(SLNode* head)
 {
-    SLNode *curr = head->Next; // µÚÒ»¸öÊı¾İ½Úµã
+    SLNode *curr = head->Next; // ç¬¬ä¸€ä¸ªæ•°æ®èŠ‚ç‚¹
     if (!curr || !curr->Next)
         return curr;
 
@@ -68,7 +68,7 @@ SLNode* reverse_recursively(SLNode* head)
 
 SLNode* reverse_stack(SLNode* head)
 {
-    SLNode *curr = head->Next; // µÚÒ»¸öÊı¾İ½Úµã
+    SLNode *curr = head->Next; // ç¬¬ä¸€ä¸ªæ•°æ®èŠ‚ç‚¹
     if (!curr || !curr->Next)
         return curr;
 
@@ -79,7 +79,7 @@ SLNode* reverse_stack(SLNode* head)
         curr = curr->Next;
     }
 
-    head->Next = curr = stack.top(); // ½«Í·½áµãÖ¸ÏòÄæÖÃºóµÄµÚÒ»¸ö½Úµã
+    head->Next = curr = stack.top(); // å°†å¤´ç»“ç‚¹æŒ‡å‘é€†ç½®åçš„ç¬¬ä¸€ä¸ªèŠ‚ç‚¹
     stack.pop();
 
     SLNode *tmp;
