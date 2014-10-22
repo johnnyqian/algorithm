@@ -1,5 +1,5 @@
 /*
-带头结点的单链表逆置
+逆置带头结点的单链表
 */
 #include <stdio.h>
 #include <stdlib.h>
@@ -20,7 +20,7 @@ void print(SLNode* head)
     while (p->Next)
     {
         p = p->Next;
-        printf("%d \t", p->data);
+        printf("%d\t", p->data);
     }
     printf("\n");
 }
@@ -120,23 +120,22 @@ void main()
     print(head);
     head=reverse(head);
     print(head);
-    printf("\n");
 
     // reset linked list
     head = reverse(head);
+    printf("\n");
 
     // 2. use recursion
     print(head);
     head = reverse_recursively(head);
     print(head);
-    printf("\n");
 
     // reset linked list
     head = reverse_recursively(head);
+    printf("\n");
 
     // 3. use stack
     print(head);
     head = reverse_stack(head);
     print(head);
-    printf("\n");
 }
