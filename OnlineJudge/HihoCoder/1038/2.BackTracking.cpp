@@ -1,4 +1,4 @@
-#include <stdio.h>
+ï»¿#include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
 #include <string.h>
@@ -42,7 +42,7 @@ void backtracking(int i)
 
     if (currrentNeed + need[i] < m)
     {
-        choices[i] = 1; // ±íÊ¾Ñ¡ÖÐµÚi¼þ½±Æ·
+        choices[i] = 1; // è¡¨ç¤ºé€‰ä¸­ç¬¬iä»¶å¥–å“
 
         currrentNeed += need[i];
         currentValue += value[i];
@@ -53,6 +53,6 @@ void backtracking(int i)
         currentValue -= value[i];
     }
 
-    choices[i] = 0; // ±íÊ¾²»Ñ¡µÚi¼þ½±Æ·
+    choices[i] = 0; // è¡¨ç¤ºä¸é€‰ç¬¬iä»¶å¥–å“
     backtracking(i + 1);
 }
