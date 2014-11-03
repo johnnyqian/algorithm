@@ -1,4 +1,4 @@
-#include <stdio.h>
+ï»¿#include <stdio.h>
 #include <stdlib.h>
 
 typedef char Datatype;
@@ -51,7 +51,7 @@ BTree* findNext(BTree* curr)
     BTree *p;
     p = curr;
 
-    if (p->rchild) // Èç¹ûÓÐÓÒ×ÓÊ÷£¬ÔòµÝ¹éÕÒµ½ÓÒ×ÓÊ÷×î×ó±ßµÄ½Úµã
+    if (p->rchild) // å¦‚æžœæœ‰å³å­æ ‘ï¼Œåˆ™é€’å½’æ‰¾åˆ°å³å­æ ‘æœ€å·¦è¾¹çš„èŠ‚ç‚¹
     {
         p = p->rchild;
         while (p->lchild)
@@ -61,10 +61,10 @@ BTree* findNext(BTree* curr)
 
         return p;
     }
-    else if (p->parent) // ·ñÔò£¬ÏòÆä¸¸½Úµã²éÕÒ
+    else if (p->parent) // å¦åˆ™ï¼Œå‘å…¶çˆ¶èŠ‚ç‚¹æŸ¥æ‰¾
     {
         BTree* parent = p->parent;
-        while (parent && parent->rchild == p) // ÏòÉÏµÝ¹éÕÒµ½µÚÒ»¸ö×÷Îª×ó×ÓÊ÷µÄ×æÏÈ½Úµã£¬»òÕßÕÒµ½¸ù½ÚµãµÄ¸¸½Úµã£¨NULL£©
+        while (parent && parent->rchild == p) // å‘ä¸Šé€’å½’æ‰¾åˆ°ç¬¬ä¸€ä¸ªä½œä¸ºå·¦å­æ ‘çš„ç¥–å…ˆèŠ‚ç‚¹ï¼Œæˆ–è€…æ‰¾åˆ°æ ¹èŠ‚ç‚¹çš„çˆ¶èŠ‚ç‚¹ï¼ˆNULLï¼‰
         {
             p = parent;
             parent = p->parent;
@@ -72,7 +72,7 @@ BTree* findNext(BTree* curr)
 
         return parent;
     }
-    else // µ±Ç°½ÚµãÎª¸ù½Úµã£¬ÇÒÃ»ÓÐÓÒ×ÓÊ÷£¬´ËÊ±¶þ²æÊ÷ÍË»¯ÎªÁ´±í
+    else // å½“å‰èŠ‚ç‚¹ä¸ºæ ¹èŠ‚ç‚¹ï¼Œä¸”æ²¡æœ‰å³å­æ ‘ï¼Œæ­¤æ—¶äºŒå‰æ ‘é€€åŒ–ä¸ºé“¾è¡¨
     {
         return NULL;
     }
@@ -106,7 +106,7 @@ BTree* insertLeftNode(BTree *curr, Datatype x)
 
     BTree *s, *t;
 
-    t = curr->lchild; // ±£´æÔ­currËùÖ¸½ÚµãµÄ×ó×ÓÊ÷Ö¸Õë
+    t = curr->lchild; // ä¿å­˜åŽŸcurræ‰€æŒ‡èŠ‚ç‚¹çš„å·¦å­æ ‘æŒ‡é’ˆ
     s = (BTree*)malloc(sizeof(BTree));
     s->data = x;
     s->lchild = t;
@@ -123,7 +123,7 @@ BTree* insertRightNode(BTree *curr, Datatype x)
 
     BTree *s, *t;
 
-    t = curr->rchild; // ±£´æÔ­currËùÖ¸½ÚµãµÄÓÒ×ÓÊ÷Ö¸Õë
+    t = curr->rchild; // ä¿å­˜åŽŸcurræ‰€æŒ‡èŠ‚ç‚¹çš„å³å­æ ‘æŒ‡é’ˆ
     s = (BTree*)malloc(sizeof(BTree));
     s->data = x;
     s->rchild = t;
