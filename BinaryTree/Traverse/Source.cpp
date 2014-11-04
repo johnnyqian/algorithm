@@ -4,9 +4,8 @@
 
 #include <stack>
 #include <queue>
+#include <algorithm>
 using namespace std;
-
-#define max(a,b) a>b?a:b
 
 void visit(Datatype x)
 {
@@ -244,28 +243,6 @@ void levelOrder(BTree *root)
     }
 }
 
-// count tree node
-int count_tree(BTree *root)
-{
-    if (root)
-        return count_tree(root->lchild) + count_tree(root->rchild) + 1;
-    else
-        return 0;
-}
-
-// calculate the height of the tree
-int height_tree(BTree *curr)
-{
-    int left, right;
-    if (!curr)
-        return 0;
-
-    left = height_tree(curr->lchild);
-    right = height_tree(curr->rchild);
-
-    return max(left, right) + 1;
-}
-
 int main()
 {
     BTree *root = CreateTree();
@@ -301,16 +278,6 @@ int main()
     printf("LevelOrder:\n");
     levelOrder(root);
     printf("\n\n");
-
-    // count tree node
-    printf("Tree Node numbers:\n");
-    printf("%d", count_tree(root));
-    printf("\n\n");
-
-    // calculate the height of the tree
-    printf("Tree Height:\n");
-    printf("%d", height_tree(root));
-    printf("\n");
 
     return 0;
 }
