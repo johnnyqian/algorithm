@@ -49,6 +49,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sorting", "Sorting", "{39A0
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QuickSort", "Sorting\QuickSort\QuickSort.vcxproj", "{358C974E-ED3A-47A0-A854-437515F6BF02}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BubbleSort", "Sorting\BubbleSort\BubbleSort.vcxproj", "{3BE64AFB-D0F2-4453-9719-E230C0C87A5F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -199,6 +201,16 @@ Global
 		{358C974E-ED3A-47A0-A854-437515F6BF02}.Release|Mixed Platforms.Build.0 = Release|Win32
 		{358C974E-ED3A-47A0-A854-437515F6BF02}.Release|Win32.ActiveCfg = Release|Win32
 		{358C974E-ED3A-47A0-A854-437515F6BF02}.Release|Win32.Build.0 = Release|Win32
+		{3BE64AFB-D0F2-4453-9719-E230C0C87A5F}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{3BE64AFB-D0F2-4453-9719-E230C0C87A5F}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{3BE64AFB-D0F2-4453-9719-E230C0C87A5F}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{3BE64AFB-D0F2-4453-9719-E230C0C87A5F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3BE64AFB-D0F2-4453-9719-E230C0C87A5F}.Debug|Win32.Build.0 = Debug|Win32
+		{3BE64AFB-D0F2-4453-9719-E230C0C87A5F}.Release|Any CPU.ActiveCfg = Release|Win32
+		{3BE64AFB-D0F2-4453-9719-E230C0C87A5F}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{3BE64AFB-D0F2-4453-9719-E230C0C87A5F}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{3BE64AFB-D0F2-4453-9719-E230C0C87A5F}.Release|Win32.ActiveCfg = Release|Win32
+		{3BE64AFB-D0F2-4453-9719-E230C0C87A5F}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -220,5 +232,6 @@ Global
 		{9B1CE9E6-3210-4133-87CA-6BE49F454E3E} = {2337CBE3-3FE4-4667-A888-91CA4FAEF1BC}
 		{880493E6-230B-49F8-8D1B-30A525047C9F} = {2DA26209-7A5C-4F67-B61F-4951BEF40321}
 		{358C974E-ED3A-47A0-A854-437515F6BF02} = {39A0CD03-3285-4217-ACF5-E475E2C604A8}
+		{3BE64AFB-D0F2-4453-9719-E230C0C87A5F} = {39A0CD03-3285-4217-ACF5-E475E2C604A8}
 	EndGlobalSection
 EndGlobal
