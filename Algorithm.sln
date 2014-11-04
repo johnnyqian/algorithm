@@ -45,6 +45,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BasicOperations", "BinaryTr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1050CSharp", "OnlineJudge\HihoCoder\1050CSharp\1050CSharp.csproj", "{880493E6-230B-49F8-8D1B-30A525047C9F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sorting", "Sorting", "{39A0CD03-3285-4217-ACF5-E475E2C604A8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QuickSort", "Sorting\QuickSort\QuickSort.vcxproj", "{358C974E-ED3A-47A0-A854-437515F6BF02}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -185,6 +189,16 @@ Global
 		{880493E6-230B-49F8-8D1B-30A525047C9F}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{880493E6-230B-49F8-8D1B-30A525047C9F}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{880493E6-230B-49F8-8D1B-30A525047C9F}.Release|Win32.ActiveCfg = Release|Any CPU
+		{358C974E-ED3A-47A0-A854-437515F6BF02}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{358C974E-ED3A-47A0-A854-437515F6BF02}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{358C974E-ED3A-47A0-A854-437515F6BF02}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{358C974E-ED3A-47A0-A854-437515F6BF02}.Debug|Win32.ActiveCfg = Debug|Win32
+		{358C974E-ED3A-47A0-A854-437515F6BF02}.Debug|Win32.Build.0 = Debug|Win32
+		{358C974E-ED3A-47A0-A854-437515F6BF02}.Release|Any CPU.ActiveCfg = Release|Win32
+		{358C974E-ED3A-47A0-A854-437515F6BF02}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{358C974E-ED3A-47A0-A854-437515F6BF02}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{358C974E-ED3A-47A0-A854-437515F6BF02}.Release|Win32.ActiveCfg = Release|Win32
+		{358C974E-ED3A-47A0-A854-437515F6BF02}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -205,5 +219,6 @@ Global
 		{ADF83E59-2F77-4FE6-A981-7C8AD1F98593} = {2337CBE3-3FE4-4667-A888-91CA4FAEF1BC}
 		{9B1CE9E6-3210-4133-87CA-6BE49F454E3E} = {2337CBE3-3FE4-4667-A888-91CA4FAEF1BC}
 		{880493E6-230B-49F8-8D1B-30A525047C9F} = {2DA26209-7A5C-4F67-B61F-4951BEF40321}
+		{358C974E-ED3A-47A0-A854-437515F6BF02} = {39A0CD03-3285-4217-ACF5-E475E2C604A8}
 	EndGlobalSection
 EndGlobal
