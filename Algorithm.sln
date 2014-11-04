@@ -43,6 +43,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InorderFindSuccessor", "Bin
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BasicOperations", "BinaryTree\BasicOperations\BasicOperations.vcxproj", "{9B1CE9E6-3210-4133-87CA-6BE49F454E3E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1050CSharp", "OnlineJudge\HihoCoder\1050CSharp\1050CSharp.csproj", "{880493E6-230B-49F8-8D1B-30A525047C9F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -173,6 +175,16 @@ Global
 		{9B1CE9E6-3210-4133-87CA-6BE49F454E3E}.Release|Mixed Platforms.Build.0 = Release|Win32
 		{9B1CE9E6-3210-4133-87CA-6BE49F454E3E}.Release|Win32.ActiveCfg = Release|Win32
 		{9B1CE9E6-3210-4133-87CA-6BE49F454E3E}.Release|Win32.Build.0 = Release|Win32
+		{880493E6-230B-49F8-8D1B-30A525047C9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{880493E6-230B-49F8-8D1B-30A525047C9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{880493E6-230B-49F8-8D1B-30A525047C9F}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{880493E6-230B-49F8-8D1B-30A525047C9F}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{880493E6-230B-49F8-8D1B-30A525047C9F}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{880493E6-230B-49F8-8D1B-30A525047C9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{880493E6-230B-49F8-8D1B-30A525047C9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{880493E6-230B-49F8-8D1B-30A525047C9F}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{880493E6-230B-49F8-8D1B-30A525047C9F}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{880493E6-230B-49F8-8D1B-30A525047C9F}.Release|Win32.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -192,5 +204,6 @@ Global
 		{42A60BB5-4523-4C51-A23E-2CE005C09CD5} = {2DA26209-7A5C-4F67-B61F-4951BEF40321}
 		{ADF83E59-2F77-4FE6-A981-7C8AD1F98593} = {2337CBE3-3FE4-4667-A888-91CA4FAEF1BC}
 		{9B1CE9E6-3210-4133-87CA-6BE49F454E3E} = {2337CBE3-3FE4-4667-A888-91CA4FAEF1BC}
+		{880493E6-230B-49F8-8D1B-30A525047C9F} = {2DA26209-7A5C-4F67-B61F-4951BEF40321}
 	EndGlobalSection
 EndGlobal
