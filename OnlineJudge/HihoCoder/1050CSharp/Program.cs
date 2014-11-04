@@ -57,7 +57,7 @@ namespace _1050CSharp
 
             ans = Math.Max(ans, first + second);
 
-            return first; // 返回当前节点
+            return first; // 返回当前节点最长的子树长度
         }
 
         static void Swap(ref int a, ref int b)
