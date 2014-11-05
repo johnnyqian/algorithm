@@ -55,6 +55,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SelectSort", "Sorting\Selec
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InsertSort", "Sorting\InsertSort\InsertSort.vcxproj", "{DC2EDE4E-8DDE-4257-A3F7-EB41091FAF64}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HeapSort", "Sorting\HeapSort\HeapSort.vcxproj", "{A10A0FD4-8849-485B-B98B-DEA77C2EA799}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -235,6 +237,16 @@ Global
 		{DC2EDE4E-8DDE-4257-A3F7-EB41091FAF64}.Release|Mixed Platforms.Build.0 = Release|Win32
 		{DC2EDE4E-8DDE-4257-A3F7-EB41091FAF64}.Release|Win32.ActiveCfg = Release|Win32
 		{DC2EDE4E-8DDE-4257-A3F7-EB41091FAF64}.Release|Win32.Build.0 = Release|Win32
+		{A10A0FD4-8849-485B-B98B-DEA77C2EA799}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{A10A0FD4-8849-485B-B98B-DEA77C2EA799}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{A10A0FD4-8849-485B-B98B-DEA77C2EA799}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{A10A0FD4-8849-485B-B98B-DEA77C2EA799}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A10A0FD4-8849-485B-B98B-DEA77C2EA799}.Debug|Win32.Build.0 = Debug|Win32
+		{A10A0FD4-8849-485B-B98B-DEA77C2EA799}.Release|Any CPU.ActiveCfg = Release|Win32
+		{A10A0FD4-8849-485B-B98B-DEA77C2EA799}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{A10A0FD4-8849-485B-B98B-DEA77C2EA799}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{A10A0FD4-8849-485B-B98B-DEA77C2EA799}.Release|Win32.ActiveCfg = Release|Win32
+		{A10A0FD4-8849-485B-B98B-DEA77C2EA799}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -259,5 +271,6 @@ Global
 		{3BE64AFB-D0F2-4453-9719-E230C0C87A5F} = {39A0CD03-3285-4217-ACF5-E475E2C604A8}
 		{F26595A3-AAAB-4E9D-A6DB-567239983176} = {39A0CD03-3285-4217-ACF5-E475E2C604A8}
 		{DC2EDE4E-8DDE-4257-A3F7-EB41091FAF64} = {39A0CD03-3285-4217-ACF5-E475E2C604A8}
+		{A10A0FD4-8849-485B-B98B-DEA77C2EA799} = {39A0CD03-3285-4217-ACF5-E475E2C604A8}
 	EndGlobalSection
 EndGlobal
