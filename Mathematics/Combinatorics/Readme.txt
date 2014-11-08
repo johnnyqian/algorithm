@@ -1,4 +1,4 @@
-﻿组合数学中的排序与组合
+﻿组合数学中的排列与组合
 
 
 A-Arrangement 排列数（在旧教材为P-Permutation），P(N,R)
