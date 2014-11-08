@@ -48,14 +48,16 @@ int count_tree(BTree *root)
 // calculate the height of the tree
 int height_tree(BTree *root)
 {
-    int left, right;
-    if (!root)
+    if (root)
+    {
+        int left = height_tree(root->lchild);
+        int right = height_tree(root->rchild);
+        return max(left, right) + 1;
+    }
+    else
+    {
         return 0;
-
-    left = height_tree(root->lchild);
-    right = height_tree(root->rchild);
-
-    return max(left, right) + 1;
+    }
 }
 
 // calculate the diameter of the tree
