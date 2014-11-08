@@ -61,6 +61,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NearestCommonAncestor", "Bi
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MergeBinarySearchTree", "BinaryTree\MergeBinarySearchTree\MergeBinarySearchTree.vcxproj", "{C0AE3367-F694-4888-9FFA-9A80475AAF65}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mathematics", "Mathematics", "{5724EF7F-E9C8-4CCC-B5B8-75FFB97D39E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Combinatorics", "Mathematics\Combinatorics\Combinatorics.csproj", "{5D84111B-F3F8-433D-A31F-D8B2AF154B0F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -271,6 +275,16 @@ Global
 		{C0AE3367-F694-4888-9FFA-9A80475AAF65}.Release|Mixed Platforms.Build.0 = Release|Win32
 		{C0AE3367-F694-4888-9FFA-9A80475AAF65}.Release|Win32.ActiveCfg = Release|Win32
 		{C0AE3367-F694-4888-9FFA-9A80475AAF65}.Release|Win32.Build.0 = Release|Win32
+		{5D84111B-F3F8-433D-A31F-D8B2AF154B0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D84111B-F3F8-433D-A31F-D8B2AF154B0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D84111B-F3F8-433D-A31F-D8B2AF154B0F}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{5D84111B-F3F8-433D-A31F-D8B2AF154B0F}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{5D84111B-F3F8-433D-A31F-D8B2AF154B0F}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{5D84111B-F3F8-433D-A31F-D8B2AF154B0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D84111B-F3F8-433D-A31F-D8B2AF154B0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D84111B-F3F8-433D-A31F-D8B2AF154B0F}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{5D84111B-F3F8-433D-A31F-D8B2AF154B0F}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{5D84111B-F3F8-433D-A31F-D8B2AF154B0F}.Release|Win32.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -298,5 +312,6 @@ Global
 		{A10A0FD4-8849-485B-B98B-DEA77C2EA799} = {39A0CD03-3285-4217-ACF5-E475E2C604A8}
 		{F5F9761E-B60B-4BA3-91D7-347DA8B1D1E5} = {2337CBE3-3FE4-4667-A888-91CA4FAEF1BC}
 		{C0AE3367-F694-4888-9FFA-9A80475AAF65} = {2337CBE3-3FE4-4667-A888-91CA4FAEF1BC}
+		{5D84111B-F3F8-433D-A31F-D8B2AF154B0F} = {5724EF7F-E9C8-4CCC-B5B8-75FFB97D39E4}
 	EndGlobalSection
 EndGlobal
