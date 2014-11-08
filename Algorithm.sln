@@ -59,6 +59,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HeapSort", "Sorting\HeapSor
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NearestCommonAncestor", "BinaryTree\NearestCommonAncestor\NearestCommonAncestor.vcxproj", "{F5F9761E-B60B-4BA3-91D7-347DA8B1D1E5}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MergeBinarySearchTree", "BinaryTree\MergeBinarySearchTree\MergeBinarySearchTree.vcxproj", "{C0AE3367-F694-4888-9FFA-9A80475AAF65}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -259,6 +261,16 @@ Global
 		{F5F9761E-B60B-4BA3-91D7-347DA8B1D1E5}.Release|Mixed Platforms.Build.0 = Release|Win32
 		{F5F9761E-B60B-4BA3-91D7-347DA8B1D1E5}.Release|Win32.ActiveCfg = Release|Win32
 		{F5F9761E-B60B-4BA3-91D7-347DA8B1D1E5}.Release|Win32.Build.0 = Release|Win32
+		{C0AE3367-F694-4888-9FFA-9A80475AAF65}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{C0AE3367-F694-4888-9FFA-9A80475AAF65}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{C0AE3367-F694-4888-9FFA-9A80475AAF65}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{C0AE3367-F694-4888-9FFA-9A80475AAF65}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C0AE3367-F694-4888-9FFA-9A80475AAF65}.Debug|Win32.Build.0 = Debug|Win32
+		{C0AE3367-F694-4888-9FFA-9A80475AAF65}.Release|Any CPU.ActiveCfg = Release|Win32
+		{C0AE3367-F694-4888-9FFA-9A80475AAF65}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{C0AE3367-F694-4888-9FFA-9A80475AAF65}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{C0AE3367-F694-4888-9FFA-9A80475AAF65}.Release|Win32.ActiveCfg = Release|Win32
+		{C0AE3367-F694-4888-9FFA-9A80475AAF65}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -285,5 +297,6 @@ Global
 		{DC2EDE4E-8DDE-4257-A3F7-EB41091FAF64} = {39A0CD03-3285-4217-ACF5-E475E2C604A8}
 		{A10A0FD4-8849-485B-B98B-DEA77C2EA799} = {39A0CD03-3285-4217-ACF5-E475E2C604A8}
 		{F5F9761E-B60B-4BA3-91D7-347DA8B1D1E5} = {2337CBE3-3FE4-4667-A888-91CA4FAEF1BC}
+		{C0AE3367-F694-4888-9FFA-9A80475AAF65} = {2337CBE3-3FE4-4667-A888-91CA4FAEF1BC}
 	EndGlobalSection
 EndGlobal
