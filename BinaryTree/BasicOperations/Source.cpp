@@ -8,6 +8,7 @@ int count_tree(BTree *root);
 int height_tree(BTree *root);
 int diameter_tree(BTree *root);
 bool is_balanced_tree(BTree *root);
+bool is_same_tree(BTree *p, BTree *q);
 
 int main()
 {
@@ -15,22 +16,31 @@ int main()
 
     // count tree node
     printf("Tree Node numbers:\n");
-    printf("%d", count_tree(root));
-    printf("\n\n");
+    printf("%d\n", count_tree(root));
+    printf("\n");
 
     // calculate the height of the tree
     printf("Tree Height:\n");
-    printf("%d", height_tree(root));
-    printf("\n\n");
+    printf("%d\n", height_tree(root));
+    printf("\n");
 
     // calculate the diameter of the tree
     printf("Tree Diameter:\n");
-    printf("%d", diameter_tree(root));
-    printf("\n\n");
+    printf("%d\n", diameter_tree(root));
+    printf("\n");
 
     // judge whether is balanced tree 
     printf("Is Balanced Tree:\n");
-    printf("%d", is_balanced_tree(root));
+    printf("%d\n", is_balanced_tree(root));
+    printf("\n");
+
+    // check whether two binary trees are equal or not
+    printf("Is Same Tree:\n");
+    BTree *A = CreateTree();
+    BTree *B = CreateTree();
+    InsertRightNode(B, 'X');
+    printf("%d\n", is_same_tree(root, A));
+    printf("%d\n", is_same_tree(A, B));
     printf("\n");
 
     return 0;
@@ -70,7 +80,7 @@ int diameter_tree(BTree *root)
     return diameter;
 }
 
-// judge whether is balanced tree
+// check whether is balanced tree
 bool is_balanced_tree(BTree* root)
 {
     if (root)
@@ -87,4 +97,14 @@ bool is_balanced_tree(BTree* root)
     }
 
     return true;
+}
+
+// check whether two binary trees are equal or not
+// two binary trees are considered equal if they are structurally identical and the nodes have the same value.
+bool is_same_tree(BTree *p, BTree *q)
+{
+    if (p == NULL && q == NULL) return true;
+    if (p == NULL || q == NULL) return false;
+
+    return (p->data == q->data) && is_same_tree(p->lchild, q->lchild) && is_same_tree(p->rchild, q->rchild);
 }
