@@ -1,6 +1,7 @@
 ﻿#include <stdio.h>
 #include "Btree.cpp"
 
+#include <queue>
 #include <algorithm>
 using namespace std;
 
@@ -9,6 +10,7 @@ int height_tree(BTree *root);
 int diameter_tree(BTree *root);
 bool is_balanced_tree(BTree *root);
 bool is_same_tree(BTree *p, BTree *q);
+bool is_complete_binary_tree(BTree *root);
 
 int main()
 {
@@ -41,6 +43,14 @@ int main()
     InsertRightNode(B, 'X');
     printf("%d\n", is_same_tree(root, A));
     printf("%d\n", is_same_tree(A, B));
+    printf("\n");
+
+    // check whether is complete binary tree
+    printf("Is Complete Binary Tree:\n");
+    printf("%d\n", is_complete_binary_tree(root));
+    InsertRightNode(root->lchild, 'H');
+    InsertLeftNode(root->lchild->lchild, 'I');
+    printf("%d\n", is_complete_binary_tree(root));
     printf("\n");
 
     return 0;
@@ -107,4 +117,34 @@ bool is_same_tree(BTree *p, BTree *q)
     if (p == NULL || q == NULL) return false;
 
     return (p->data == q->data) && is_same_tree(p->lchild, q->lchild) && is_same_tree(p->rchild, q->rchild);
+}
+
+// check whether is complete binary tree
+// 层次遍历二叉树，遍历的左右节点入队列。若出队列的结点为空，则以后出队列的结点都为空，则为完全二叉树，否则不是
+bool is_complete_binary_tree(BTree *root)
+{
+    if (!root)
+        return true;
+
+    BTree *t;
+    queue<BTree*> queue;
+    queue.push(root);
+
+    bool hasNullNode = false;
+    while (!queue.empty())
+    {
+        t = queue.front();
+        queue.pop();
+
+        if (!t)
+            hasNullNode = true;
+        else if (hasNullNode) return false;
+        else
+        {
+            queue.push(t->lchild);
+            queue.push(t->rchild);
+        }
+    }
+
+    return true;
 }
