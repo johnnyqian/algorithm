@@ -64,3 +64,29 @@ BTree* CreateTree()
 
     return root;
 }
+
+BTree* CreateBSTree()
+{
+    /* Construct a binary search tree as below:
+             G
+         E         K
+      C     F   H     M
+        D
+    */
+
+    BTree *root = (BTree *)malloc(sizeof(BTree));
+    root->data = 'G';
+    root->lchild = NULL;
+    root->rchild = NULL;
+
+    BTree *e = InsertLeftNode(root, 'E');
+    InsertRightNode(e, 'F');
+    BTree *c = InsertLeftNode(e, 'C');
+    InsertRightNode(c, 'D');
+
+    BTree *k = InsertRightNode(root, 'K');
+    InsertLeftNode(k, 'H');
+    InsertRightNode(k, 'M');
+
+    return root;
+}

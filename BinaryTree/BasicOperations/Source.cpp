@@ -2,6 +2,7 @@
 #include "Btree.cpp"
 
 #include <queue>
+#include <stack>
 #include <algorithm>
 using namespace std;
 
@@ -11,6 +12,7 @@ int diameter_tree(BTree *root);
 bool is_balanced_tree(BTree *root);
 bool is_same_tree(BTree *p, BTree *q);
 bool is_complete_binary_tree(BTree *root);
+bool is_BST(BTree *root);
 
 int main()
 {
@@ -52,6 +54,12 @@ int main()
     InsertLeftNode(root->lchild->lchild, 'I');
     printf("%d\n", is_complete_binary_tree(root));
     printf("\n");
+
+    // check whether is binary search tree
+    printf("Is Binary Search Tree:\n");
+    printf("%d\n", is_BST(root));
+    BTree *bst = CreateBSTree();
+    printf("%d\n", is_BST(bst));
 
     return 0;
 }
@@ -120,7 +128,7 @@ bool is_same_tree(BTree *p, BTree *q)
 }
 
 // check whether is complete binary tree
-// 层次遍历二叉树，遍历的左右节点入队列。若出队列的结点为空，则以后出队列的结点都为空，则为完全二叉树，否则不是
+// 层次遍历二叉树，左右节点都入队列。若出队列的结点为空，若其后出队列的结点都为空，则为完全二叉树，否则不是
 bool is_complete_binary_tree(BTree *root)
 {
     if (!root)
@@ -141,9 +149,42 @@ bool is_complete_binary_tree(BTree *root)
         else if (hasNullNode) return false;
         else
         {
+            // do not check whether left child or right child is NULL or not
             queue.push(t->lchild);
             queue.push(t->rchild);
         }
+    }
+
+    return true;
+}
+
+// check whether is binary search tree
+// 根据中序遍历序列是否升序来判断
+bool is_BST(BTree *root)
+{
+    if (!root) return true;
+
+    stack<BTree*> stack;
+
+    BTree *p = root;
+    BTree *pre = NULL;
+    while (!stack.empty() || p)
+    {
+        // 左走到底
+        while (p)
+        {
+            stack.push(p);
+            p = p->lchild;
+        }
+
+        p = stack.top();
+        stack.pop();
+
+        if (pre && p->data <= pre->data)
+            return false;
+
+        pre = p;
+        p = p->rchild;
     }
 
     return true;
