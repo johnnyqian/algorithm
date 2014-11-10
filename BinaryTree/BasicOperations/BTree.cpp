@@ -90,3 +90,19 @@ BTree* CreateBSTree()
 
     return root;
 }
+
+void visit(Datatype x)
+{
+    printf("%c\t", x);
+}
+
+// 前序，递归
+void preOrder_recursion(BTree *curr)
+{
+    if (curr)
+    {
+        visit(curr->data);
+        preOrder_recursion(curr->lchild);
+        preOrder_recursion(curr->rchild);
+    }
+}

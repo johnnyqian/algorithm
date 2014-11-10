@@ -13,6 +13,9 @@ bool is_balanced_tree(BTree *root);
 bool is_same_tree(BTree *p, BTree *q);
 bool is_complete_binary_tree(BTree *root);
 bool is_BST(BTree *root);
+BTree* clone(BTree *p);
+BTree* mirror(BTree *p);
+void destroy(BTree* &p);
 
 int main()
 {
@@ -60,6 +63,27 @@ int main()
     printf("%d\n", is_BST(root));
     BTree *bst = CreateBSTree();
     printf("%d\n", is_BST(bst));
+    printf("\n");
+
+    // clone a binary tree
+    printf("Clone a Binary Tree:\n");
+    preOrder_recursion(root);
+    printf("\n");
+    preOrder_recursion(clone(root));
+    printf("\n\n");
+
+    // mirror a binary tree
+    printf("Mirror a Binary Tree:\n");
+    root = CreateTree();
+    preOrder_recursion(root);
+    printf("\n");
+    preOrder_recursion(mirror(root));
+    printf("\n\n");
+
+    // destroy a binary tree
+    printf("Destroy a Binary Tree:\n");
+    destroy(root);
+    printf("Done.\n");
 
     return 0;
 }
@@ -188,4 +212,45 @@ bool is_BST(BTree *root)
     }
 
     return true;
+}
+
+// clone a binary tree
+BTree* clone(BTree *p)
+{
+    if (!p) return NULL;
+
+    BTree *temp = (BTree*)malloc(sizeof(BTree));
+    temp->data = p->data;
+    temp->lchild = clone(p->lchild);
+    temp->rchild = clone(p->rchild);
+    return temp;
+}
+
+// mirror a binary tree
+BTree* mirror(BTree *p)
+{
+    if (!p) return NULL;
+
+    BTree* lmirror = mirror(p->lchild);
+    BTree* rmirror = mirror(p->rchild);
+
+    p->lchild = rmirror;
+    p->rchild = lmirror;
+
+    return p;
+}
+
+// destroy a binary tree
+// traverse the tree with post order
+void destroy(BTree* &p)
+{
+    if (!p)
+        return;
+    if (p)
+    {
+        destroy(p->lchild);
+        destroy(p->rchild);
+    }
+    free(p);
+    p = NULL;
 }
