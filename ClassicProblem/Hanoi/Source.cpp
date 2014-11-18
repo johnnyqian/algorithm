@@ -1,12 +1,12 @@
-#include<iostream>
+ï»¿#include<iostream>
 using namespace std;
 
 int moveTimes;
 
-// from ÎªÆðµãÖù
-// buffer ÎªÖÐ×ªÖù
-// to ÎªÄ¿±êÖù
-// ×¢Òâ²ÎÊýµÄË³Ðò
+// from ä¸ºèµ·ç‚¹æŸ±
+// buffer ä¸ºä¸­è½¬æŸ±
+// to ä¸ºç›®æ ‡æŸ±
+// æ³¨æ„å‚æ•°çš„é¡ºåº
 void hanoi(int n, char from, char buffer, char to)
 {
     if (n > 0)
