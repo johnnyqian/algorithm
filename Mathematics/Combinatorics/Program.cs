@@ -4,9 +4,9 @@ namespace Combinatorics
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            var arr = new int[] { 1, 2, 3, 4, 5, 6 };
+            var arr = new[] { 1, 2, 3, 4, 5, 6 };
 
             Console.WriteLine(Combinatorics.CombinationCount(arr.Length, 3));
             Console.WriteLine(Combinatorics.PermutationCount(arr.Length, 3));
