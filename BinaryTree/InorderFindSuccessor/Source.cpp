@@ -48,8 +48,7 @@ int main()
 
 BTree* findNext(BTree* curr)
 {
-    BTree *p;
-    p = curr;
+    BTree *p = curr;
 
     if (p->rchild) // 如果有右子树，则递归找到右子树最左边的节点
     {

@@ -4,9 +4,7 @@
 typedef char Datatype;
 typedef struct BTreeNode{
     Datatype data;
-    struct BTreeNode* lchild;
-    struct BTreeNode* rchild;
-    struct BTreeNode* parent;
+    struct BTreeNode *lchild, *rchild, *parent;
 } BTree;
 
 void print(BTree* result);
@@ -62,7 +60,7 @@ int main()
     return 0;
 }
 
-// 使用Parent指针
+// 使用Parent指针，即如果二叉树的节点中定义了父指针域
 BTree* findNCA(BTree* p, BTree* q)
 {
     while (p)
@@ -81,7 +79,10 @@ BTree* findNCA(BTree* p, BTree* q)
     return NULL;
 }
 
+// TODO, 使用2条链表，以空间换时间
+
 // 不使用Parent指针
+// 返回root为根的树种包含p,q两个节点中节点的数目:0,1,2
 int findNCA2(BTree* root, BTree* p, BTree* q, BTree** result)
 {
     if (!root) return 0;

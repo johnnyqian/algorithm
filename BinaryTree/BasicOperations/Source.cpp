@@ -146,8 +146,7 @@ bool is_same_tree(BTree *p, BTree *q)
 // 层次遍历二叉树，左右节点都入队列。若出队列的结点为空，若其后出队列的结点都为空，则为完全二叉树，否则不是
 bool is_complete_binary_tree(BTree *root)
 {
-    if (!root)
-        return true;
+    if (!root) return true;
 
     BTree *t;
     queue<BTree*> queue;
@@ -179,10 +178,10 @@ bool is_BST(BTree *root)
 {
     if (!root) return true;
 
-    stack<BTree*> stack;
-
     BTree *p = root;
     BTree *pre = NULL;
+    stack<BTree*> stack;
+
     while (!stack.empty() || p)
     {
         // 左走到底
@@ -235,13 +234,11 @@ BTree* mirror(BTree *p)
 // traverse the tree with post order
 void destroy(BTree* &p)
 {
-    if (!p)
-        return;
     if (p)
     {
         destroy(p->lchild);
         destroy(p->rchild);
+        free(p);
+        p = NULL;
     }
-    free(p);
-    p = NULL;
 }
