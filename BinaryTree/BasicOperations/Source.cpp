@@ -1,4 +1,5 @@
 ﻿#include <stdio.h>
+#include <math.h>
 #include "Btree.cpp"
 
 #include <queue>
@@ -125,20 +126,10 @@ int diameter_tree(BTree *root)
 // check whether is balanced tree
 bool is_balanced_tree(BTree* root)
 {
-    if (root)
-    {
-        int diff = height_tree(root->lchild) - height_tree(root->rchild);
-        if (diff < -1 || diff > 1)
-            return false;
-
-        if (!is_balanced_tree(root->lchild))
-            return false;
-
-        if (!is_balanced_tree(root->rchild))
-            return false;
-    }
-
-    return true;
+    return (root == NULL)
+        || (abs(height_tree(root->lchild) - height_tree(root->rchild)) <= 1)
+        && is_balanced_tree(root->lchild)
+        && is_balanced_tree(root->rchild);
 }
 
 // check whether two binary trees are equal or not
