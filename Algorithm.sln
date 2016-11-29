@@ -87,6 +87,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ArrayOfProduct", "DynamicPr
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "K-th Number", "OnlineJudge\POJ\K-th Number\K-th Number.vcxproj", "{68E8127E-A0A6-4CB4-B54C-9079B5C5F04B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrappingRainWater", "OnlineJudge\LeetCode\TrappingRainWater\TrappingRainWater.csproj", "{FACE4816-195B-44B6-8D3D-8BFD2109F1A6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -387,6 +389,16 @@ Global
 		{68E8127E-A0A6-4CB4-B54C-9079B5C5F04B}.Release|Mixed Platforms.Build.0 = Release|Win32
 		{68E8127E-A0A6-4CB4-B54C-9079B5C5F04B}.Release|Win32.ActiveCfg = Release|Win32
 		{68E8127E-A0A6-4CB4-B54C-9079B5C5F04B}.Release|Win32.Build.0 = Release|Win32
+		{FACE4816-195B-44B6-8D3D-8BFD2109F1A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FACE4816-195B-44B6-8D3D-8BFD2109F1A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FACE4816-195B-44B6-8D3D-8BFD2109F1A6}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{FACE4816-195B-44B6-8D3D-8BFD2109F1A6}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{FACE4816-195B-44B6-8D3D-8BFD2109F1A6}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{FACE4816-195B-44B6-8D3D-8BFD2109F1A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FACE4816-195B-44B6-8D3D-8BFD2109F1A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FACE4816-195B-44B6-8D3D-8BFD2109F1A6}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{FACE4816-195B-44B6-8D3D-8BFD2109F1A6}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{FACE4816-195B-44B6-8D3D-8BFD2109F1A6}.Release|Win32.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -425,5 +437,6 @@ Global
 		{43D4E929-98E8-4D56-B322-9BA1BA6A98A8} = {16E86EA8-ACD1-4841-A013-1ECA682D3323}
 		{95534733-426A-4CD2-B75F-039ED785DA84} = {A13CA262-92F4-47F4-8D86-C9BBB89EE285}
 		{68E8127E-A0A6-4CB4-B54C-9079B5C5F04B} = {43D4E929-98E8-4D56-B322-9BA1BA6A98A8}
+		{FACE4816-195B-44B6-8D3D-8BFD2109F1A6} = {A291B432-489F-4AC2-903A-C2CEC36EB316}
 	EndGlobalSection
 EndGlobal
